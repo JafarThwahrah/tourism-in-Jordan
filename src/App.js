@@ -8,8 +8,8 @@ import Pages from "./components/Pages";
 function App() {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
         <Pages />
       </BrowserRouter>
       <Footer />

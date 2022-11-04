@@ -1,6 +1,18 @@
     .card{
-        height:12rem;
+        height:15rem;
         width:20rem;
+        filter: brightness(60%);
+        transition: ease-in-out , 1200ms;
 
+    }
 
+    .card-img{
+        height:15rem;
+        width:20rem;
+    }
+
+    .card:hover{
+        filter: brightness(100%);
+        scale: 1.2;
+        
     }

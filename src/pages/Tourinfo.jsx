@@ -2,19 +2,22 @@ import React from 'react'
 import {  useParams } from "react-router-dom";
 
 function Tourinfo(props) {
-  let params = useParams();
-  
+  const {id} = useParams();
   const distinations = props.data;
-  const tourinfo = distinations.filter((a, params)=>{
-    return a.id === params.id;
+  
+  let tourinfo = distinations.filter(a=>{
+    return a.id ===id;
   })
+
+  
+
 
   return (
     tourinfo.map((info)=>{
       return(
       <>
-    <div>{info.info}</div>
-    <div>{info.price}</div>
+    <div>Summary: {info.info}</div>
+    <div>Price :{info.price} JOD</div>
     </>
     )
   })

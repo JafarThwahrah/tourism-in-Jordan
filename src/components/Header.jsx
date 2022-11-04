@@ -1,5 +1,6 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
+import "../styles/Header.css";
 function Header() {
   return (
     <div>
@@ -15,6 +16,8 @@ function Header() {
             />
             React
           </a>
+          <NavLink to="/" className="navLink">Home</NavLink>
+
           <form className="d-flex" role="search">
             <input
               className="form-control me-2"

@@ -11,6 +11,14 @@
         ]
       }
     ],
-    "manifest-file-extension": "off"
+    "manifest-file-extension": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "scale"
+        ]
+      }
+    ]
   }
 }

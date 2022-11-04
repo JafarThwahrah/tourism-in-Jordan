@@ -1,5 +1,6 @@
 import React from 'react'
 import {  useParams } from "react-router-dom";
+import "../styles/Tourinfo.css"
 
 function Tourinfo(props) {
   const {id} = useParams();
@@ -15,10 +16,16 @@ function Tourinfo(props) {
   return (
     tourinfo.map((info)=>{
       return(
-      <>
-    <div>Summary: {info.info}</div>
-    <div>Price :{info.price} JOD</div>
-    </>
+      <div className='TourinfoContainer'>
+      <div className='m-3'>
+    <h3>Summary</h3>
+    <p>{info.info}</p>
+    </div>
+    <div className='m-3'>
+    <h5>Price</h5>
+    <p>{info.price} JOD</p>
+    </div>
+    </div>
     )
   })
   )

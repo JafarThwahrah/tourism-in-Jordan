@@ -1,3 +1,6 @@
+    body{
+        height: 100vh;
+    }
     .card{
         height:15rem;
         width:20rem;

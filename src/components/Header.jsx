@@ -16,7 +16,9 @@ function Header() {
             />
             React
           </a>
-          <NavLink to="/" className="navLink">Home</NavLink>
+          <NavLink to="/" className="navLink">
+            Home
+          </NavLink>
 
           <form className="d-flex" role="search">
             <input

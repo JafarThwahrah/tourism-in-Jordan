@@ -1,13 +1,12 @@
-import React from 'react'
-import Tours from '../components/Tours'
+import React from "react";
+import Tours from "../components/Tours";
 
-function Home (data) {
-   
+function Home(data) {
   return (
-    <div className='m-5'>
-        <Tours data={data.data}/>
+    <div className="m-5">
+      <Tours data={data.data} />
     </div>
-  )
+  );
 }
 
 export default Home;

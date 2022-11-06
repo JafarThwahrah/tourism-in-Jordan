@@ -8,7 +8,7 @@ function Tours(props) {
       {props.data.map((place) => {
         let tourPath = "/Tourinfo/" + place.id;
         return (
-          <Tour tourPath={tourPath} name={place.name} image={place.image} />
+          <Tour key={place.id} tourPath={tourPath} name={place.name} image={place.image} />
         );
       })}
     </div>

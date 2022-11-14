@@ -1,10 +1,10 @@
 import React from "react";
 import Tours from "../components/Tours";
 
-function Home(data) {
+function Home() {
   return (
     <div className="m-5">
-      <Tours data={data.data} />
+      <Tours />
     </div>
   );
 }
